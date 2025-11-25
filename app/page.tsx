@@ -12,7 +12,7 @@ export default function Home() {
         <div className="flex flex-col min-h-screen relative">
             <Header />
 
-            <main className="flex-grow">
+            <main className="grow">
                 {/* Hero Section */}
                 <section className="relative min-h-screen flex items-center bg-[#122429]">
                     <div className="container mx-auto px-4 pt-24 relative z-10">
@@ -189,8 +189,9 @@ export default function Home() {
                                     {Array.from({ length: 2 }).map((_, index) => (
                                         <CarouselItem key={index}>
                                             <div className="p-1">
+                                                {/* eslint-disable-next-line @next/next/no-img-element */}
                                                 <img
-                                                    src={`/product-${index + 1}.png`}
+                                                    src={`/layl-landing-page/product-${index + 1}.png`}
                                                     alt="Layl Platform Screenshot"
                                                     className="w-full"
                                                 />
