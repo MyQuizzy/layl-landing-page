@@ -6,7 +6,6 @@ import Autoplay from "embla-carousel-autoplay";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import Link from "next/link";
-import Image from "next/image";
 
 export default function Home() {
     return (
@@ -190,11 +189,9 @@ export default function Home() {
                                     {Array.from({ length: 2 }).map((_, index) => (
                                         <CarouselItem key={index}>
                                             <div className="p-1">
-                                                <Image
+                                                <img
                                                     src={`/product-${index + 1}.png`}
                                                     alt="Layl Platform Screenshot"
-                                                    width={1200}
-                                                    height={675}
                                                     className="w-full"
                                                 />
                                             </div>
